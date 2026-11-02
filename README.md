@@ -45,6 +45,17 @@ xattr -dr com.apple.quarantine /Applications/Cadence.app
 
 一个 4K 下落式音游，最初是一次「音乐游戏 + LLM」作业的产物。游戏本体是纯前端实现，不联网，所有判定都在本地算。开发过程、每一代改了什么、以及两次来自学长学姐的关键意见，都写在[源码仓库的 README](https://github.com/LynneScheutie/Cadence) 里。
 
+## 校验值
+
+| 文件 | SHA-256 |
+| --- | --- |
+| `Cadence-1.2.0-arm64.dmg` | `4a42a9fcc97d3bcb30b6d95f226be0cc52e3c91f042056bfbc3811d50055373d` |
+| `Cadence-1.2.0.dmg` | `0dd769248e0b54964776a2763a4b5e6f6d172f260530e116504336c8e6481192` |
+| `Cadence-1.2.0-win.zip` | `7a86d6e8b5638c53ea3b505a302d5ebe98918736953709c3130a69ac74d55271` |
+| `Cadence-1.2.0-arm64-win.zip` | `2e54d9c6b418c27360d74ec578e0016f654c966080d7c499711fef20bb47a265` |
+
+对比方式：`shasum -a 256 文件名`（Windows 用 `certutil -hashfile 文件名 SHA256`）。
+
 ## 已知局限
 
 - **只有四键**。S / D / J / K 固定映射四条轨道，不支持自定义键位。
